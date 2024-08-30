@@ -47,7 +47,7 @@ public class GeradorDeSenhas {
         for(x=0; x<quantCarac; x++){
 
             int L = gerador.nextInt(sorteio.length());
-            strBuild.append(sorteio.charAt(L));
+            strBuild.append(sorteio.charAt(L)); //charAt() retorna uma valor string de uma string da posição indice especificada 
 
 
         }
