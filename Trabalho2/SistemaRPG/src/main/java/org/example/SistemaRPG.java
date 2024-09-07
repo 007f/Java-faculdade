@@ -24,4 +24,5 @@ public class SistemaRPG {
         guerreiro.exibirStatus();
         mago.exibirStatus();
         arqueiro.exibirStatus();
+    }
 }
