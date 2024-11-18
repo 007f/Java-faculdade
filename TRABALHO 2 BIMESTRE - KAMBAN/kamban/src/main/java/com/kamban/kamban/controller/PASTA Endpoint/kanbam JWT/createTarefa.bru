@@ -1,0 +1,24 @@
+meta {
+  name: createTarefa
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:8080/tarefa
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
+
+body:json {
+  {
+      "titulo" : "Atividade 1",
+      "descricao" : "Tem que estudar SQL Pra realizar o trabalho no dia 12",
+      "prioridade" : "MEDIA",
+      "dataFinal" : "2024-11-20"
+  }
+}

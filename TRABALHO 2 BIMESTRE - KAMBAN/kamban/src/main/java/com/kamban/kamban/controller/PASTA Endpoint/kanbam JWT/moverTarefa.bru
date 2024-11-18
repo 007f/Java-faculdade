@@ -1,0 +1,15 @@
+meta {
+  name: moverTarefa
+  type: http
+  seq: 8
+}
+
+put {
+  url: http://localhost:8080/tarefa/1/move
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}

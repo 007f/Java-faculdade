@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "kanbam JWT",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

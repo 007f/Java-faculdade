@@ -1,0 +1,15 @@
+meta {
+  name: DeletarTarefa
+  type: http
+  seq: 10
+}
+
+delete {
+  url: http://localhost:8080/tarefa/1
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}

@@ -1,0 +1,15 @@
+meta {
+  name: viewTarefaPorPrioridade
+  type: http
+  seq: 9
+}
+
+get {
+  url: http://localhost:8080/tarefa/listarPrioridade
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{accessToken}}
+}
